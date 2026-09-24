@@ -1,0 +1,2356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UNIT 7: TECHNOLOGY TRANSFER</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f4f6f8;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1f2937;
+        line-height: 1.65;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .header {
+        background: linear-gradient(135deg, #172554, #2563eb);
+        color: white;
+        padding: 45px 35px;
+        border-radius: 18px;
+        margin-bottom: 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    .header h1 {
+        margin: 0 0 10px;
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .header p {
+        margin: 8px 0;
+        font-size: 17px;
+        opacity: 0.95;
+    }
+
+    .section {
+        background: #ffffff;
+        padding: 30px;
+        margin-bottom: 24px;
+        border-radius: 15px;
+        box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+    }
+
+    h2 {
+        color: #1d4ed8;
+        border-left: 5px solid #2563eb;
+        padding-left: 14px;
+        margin-top: 0;
+        font-size: 25px;
+    }
+
+    h3 {
+        color: #1e40af;
+        margin-top: 28px;
+        font-size: 20px;
+    }
+
+    h4 {
+        color: #334155;
+        margin-top: 22px;
+        font-size: 17px;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    ul, ol {
+        padding-left: 25px;
+    }
+
+    li {
+        margin: 7px 0;
+    }
+
+    .intro-box {
+        background: #eff6ff;
+        border-left: 5px solid #2563eb;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 18px 0;
+    }
+
+    .important {
+        background: #fff7ed;
+        border-left: 5px solid #f97316;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 18px 0;
+    }
+
+    .exam-box {
+        background: #ecfdf5;
+        border-left: 5px solid #10b981;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 18px 0;
+    }
+
+    .warning {
+        background: #fef2f2;
+        border-left: 5px solid #ef4444;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 18px 0;
+    }
+
+    .definition {
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        padding: 18px;
+        border-radius: 10px;
+        margin: 18px 0;
+    }
+
+    .golden {
+        background: linear-gradient(135deg, #fffbeb, #fef3c7);
+        border: 1px solid #f59e0b;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 15px 0;
+    }
+
+    .golden strong {
+        color: #92400e;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    th {
+        background: #1e3a8a;
+        color: white;
+        padding: 13px;
+        text-align: left;
+    }
+
+    td {
+        padding: 12px;
+        border: 1px solid #dbeafe;
+        vertical-align: top;
+    }
+
+    tr:nth-child(even) {
+        background: #f8fafc;
+    }
+
+    .revision-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .revision-card {
+        background: #f8fafc;
+        border: 1px solid #dbeafe;
+        border-radius: 12px;
+        padding: 18px;
+    }
+
+    .revision-card h3 {
+        margin-top: 0;
+        color: #1d4ed8;
+        font-size: 18px;
+    }
+
+    .memory-map {
+        background: #eff6ff;
+        border: 2px dashed #60a5fa;
+        padding: 25px;
+        border-radius: 14px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 2;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 25px;
+        color: #64748b;
+        font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+        .header {
+            padding: 30px 22px;
+        }
+
+        .header h1 {
+            font-size: 27px;
+        }
+
+        .section {
+            padding: 22px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+        }
+    }
+
+    @media print {
+        body {
+            background: white;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .section {
+            box-shadow: none;
+            page-break-inside: avoid;
+        }
+
+        .header {
+            box-shadow: none;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+    <h1>UNIT 7: TECHNOLOGY TRANSFER</h1>
+    <p><strong>Complete Exam Notes</strong></p>
+    <p>
+        Technology Transfer • Transfer Process • Issues & Dimensions • Transfer Models
+        • Modes & Routes • Governance • Government Support • Agreements
+    </p>
+</div>
+
+
+<!-- INTRODUCTION -->
+<div class="section">
+
+    <h2>1. Introduction & Learning Objectives</h2>
+
+    <div class="intro-box">
+        <p>
+            Technology transfer is vital for economic and industrial growth because it
+            enables businesses to adopt advanced knowledge, skills and processes from
+            other sources.
+        </p>
+
+        <p>
+            It reduces the need for expensive and lengthy R&D by allowing companies to
+            adapt existing technologies to their own needs.
+        </p>
+
+        <p>
+            Effective technology transfer can boost innovation, enhance productivity,
+            improve product quality and help firms remain competitive in local and
+            global markets.
+        </p>
+    </div>
+
+    <p>
+        Technology transfer involves more than simply transferring equipment.
+        It encompasses technical knowledge, management practices, training,
+        documentation and support required for proper use.
+    </p>
+
+    <p>
+        Successful transfer depends on skilled staff, organisational readiness,
+        funding and supportive policies.
+    </p>
+
+    <p>
+        Technology transfer can occur through licensing, joint ventures, foreign
+        investment, consulting and collaborative research, often supported by
+        governments and institutions.
+    </p>
+
+    <div class="exam-box">
+
+        <strong>Learning Objectives — Write in Exam</strong>
+
+        <ol>
+            <li>
+                Explain concepts, process and significance of technology transfer
+                in organisational and economic development.
+            </li>
+
+            <li>
+                Apply different modes, routes and models of technology transfer
+                to real industrial or institutional situations.
+            </li>
+
+            <li>
+                Analyse issues, dimensions and challenges affecting effective
+                technology transfer and absorption.
+            </li>
+
+            <li>
+                Evaluate and design appropriate governance mechanisms, agreements
+                and strategic approaches to ensure successful outcomes.
+            </li>
+        </ol>
+
+    </div>
+
+</div>
+
+
+<!-- MEANING -->
+<div class="section">
+
+    <h2>2. Technology Transfer — Meaning, Objectives, Process & Features</h2>
+
+    <h3>2.1 Meaning and Definition of Technology Transfer</h3>
+
+    <div class="definition">
+        <strong>Definition:</strong>
+        Technology transfer is the process by which technology moves between
+        organisations, institutions or countries for practical use.
+    </div>
+
+    <p>
+        Technology transfer includes physical equipment as well as intangible
+        elements such as technical knowledge, skills, production methods,
+        procedures and managerial practices.
+    </p>
+
+    <p>
+        Successful transfer requires the recipient to learn, adapt and integrate
+        technology into local conditions, workforce capabilities and available
+        resources.
+    </p>
+
+    <p>
+        Absorption and improvement can increase productivity, quality and innovation,
+        strengthen competitiveness and economic growth, and promote long-term
+        technological self-reliance.
+    </p>
+
+
+    <h3>Objectives and Significance — 9 Points</h3>
+
+    <div class="important">
+        <strong>Must Write for 5 Marks</strong>
+    </div>
+
+    <ol>
+        <li>
+            Give nations and organisations access to cutting-edge, tested technology
+            without the time, expense and risks of independent R&D.
+        </li>
+
+        <li>
+            Provide a quicker and more affordable path to technological development
+            by using existing technology.
+        </li>
+
+        <li>
+            Encourage industrial progress by bridging the technology gap between
+            industrialised and less-developed nations.
+        </li>
+
+        <li>
+            Increase production through contemporary equipment, practical procedures
+            and improved management techniques.
+        </li>
+
+        <li>
+            Increase product quality, lower manufacturing costs and improve reliability.
+        </li>
+
+        <li>
+            Facilitate domestic manufacturing of previously imported products,
+            reducing dependence on imports.
+        </li>
+
+        <li>
+            Enhance technical and management skills through education, training
+            and skill development.
+        </li>
+
+        <li>
+            Encourage the use of optimal technology and efficient utilisation
+            of resources.
+        </li>
+
+        <li>
+            Support long-term technical independence, competitiveness and innovation.
+        </li>
+    </ol>
+
+
+    <h3>Role in Innovation and Industrial Development</h3>
+
+    <p>
+        Technology transfer promotes innovation and industrial growth by allowing
+        companies to strengthen technical expertise and internal capabilities.
+    </p>
+
+    <p>
+        Instead of simply replicating technologies, businesses can adapt them to
+        local circumstances, market demands and available resources.
+    </p>
+
+    <p>
+        At the industrial level, technology transfer improves competitiveness by
+        increasing productivity, quality and efficiency, modernising manufacturing
+        and enabling diversification into new sectors.
+    </p>
+
+    <p>
+        Over time, it can reduce technological dependence by promoting skill
+        development, employment generation and sustainable economic growth.
+    </p>
+
+
+    <h3>2.2 Technology Transfer Process — 6 Stages</h3>
+
+    <div class="important">
+        <strong>Very Important — 10 Marks:</strong>
+        Need Identification → Search & Selection → Feasibility → Negotiation →
+        Implementation/Absorption/Adaptation → Learning & Improvement
+    </div>
+
+    <h4>1. Identification of Technology Need</h4>
+
+    <p>
+        This is the first and crucial step. The organisation evaluates its current
+        technological capabilities against its objectives.
+    </p>
+
+    <p>
+        Technology needs may arise from low productivity, outdated processes,
+        quality issues, rising costs, competition, regulations or market changes.
+    </p>
+
+    <p>
+        Management must specify the required product, process or managerial technology
+        and ensure alignment with long-term strategy, financial capacity and
+        operational goals.
+    </p>
+
+
+    <h4>2. Technology Search and Selection</h4>
+
+    <p>
+        Organisations identify potential sources of technology. Sources may be
+        domestic or international and include technology suppliers, research
+        institutions, universities, MNCs and licensing agencies.
+    </p>
+
+    <p>
+        Technologies are evaluated based on maturity, reliability, compatibility,
+        availability of technical support and supplier credibility.
+    </p>
+
+
+    <h4>3. Evaluation of Technical and Economic Feasibility</h4>
+
+    <p>
+        Technical feasibility examines whether the technology can work with existing
+        production systems, infrastructure and workforce skills.
+    </p>
+
+    <p>
+        Economic feasibility includes acquisition, installation, operating and
+        training costs along with expected returns, payback period, profitability
+        and long-term sustainability.
+    </p>
+
+    <div class="exam-box">
+        <strong>Key idea:</strong>
+        A technology must be technically practical and economically viable before
+        adoption or agreement.
+    </div>
+
+
+    <h4>4. Negotiation and Finalisation</h4>
+
+    <p>
+        The technology provider and recipient establish mutually beneficial terms.
+    </p>
+
+    <p>Important matters include:</p>
+
+    <ul>
+        <li>Licensing fees</li>
+        <li>Royalties</li>
+        <li>Duration</li>
+        <li>Scope of use</li>
+        <li>Technical support</li>
+        <li>Training</li>
+        <li>Intellectual property rights</li>
+    </ul>
+
+    <p>
+        Legal, financial and technical experts may participate to prevent
+        ambiguity and future disputes.
+    </p>
+
+
+    <h4>5. Implementation, Absorption and Adaptation</h4>
+
+    <p>
+        Implementation involves installing and using the technology.
+        Absorption is the capacity to understand, use and manage it effectively.
+    </p>
+
+    <p>
+        Employees may require training, while workflows and organisational
+        structures may need adjustment.
+    </p>
+
+    <p>
+        Adaptation modifies the technology to fit local materials, skills,
+        climate, regulations and market requirements.
+    </p>
+
+    <p>
+        Poor absorption can result in underutilisation.
+    </p>
+
+
+    <h4>6. Learning and Improvement After Transfer</h4>
+
+    <p>
+        This is the final and ongoing stage. Hands-on experience helps organisations
+        understand the technology better and identify opportunities for improvement
+        and innovation.
+    </p>
+
+    <p>
+        Continuous learning can improve efficiency, reduce costs, improve quality,
+        build internal capabilities and reduce dependence on external sources.
+    </p>
+
+
+    <h3>2.3 Features of Technology Transfer — 5 Components</h3>
+
+    <p>
+        A technology transfer package includes more than machines.
+        It brings together five major components.
+    </p>
+
+    <div class="revision-grid">
+
+        <div class="revision-card">
+            <h3>1. Hardware</h3>
+            <p>
+                Machinery, tools and equipment. Selection, installation,
+                calibration and maintenance are important.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>2. Software & Know-how</h3>
+            <p>
+                Methods, procedures, controls, problem-solving skills,
+                computer programmes and systems.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>3. Managerial Practices</h3>
+            <p>
+                Management systems, workflows, organisational structures,
+                decision-making and performance controls.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>4. Training & Skill Development</h3>
+            <p>
+                Classroom instruction, on-the-job training, workshops and
+                international exposure.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>5. Documentation & Technical Support</h3>
+            <p>
+                Manuals, drawings, specifications, procedures, maintenance
+                guides and supplier technical support.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ISSUES AND DIMENSIONS -->
+<div class="section">
+
+    <h2>3. Issues and Dimensions of Technology Transfer</h2>
+
+    <p>
+        Many obstacles can affect technology transfer, including cultural hurdles,
+        resistance to change, excessive expenses, unclear returns, poor management,
+        technical incompatibility and legal or intellectual property conflicts.
+    </p>
+
+    <p>
+        Major dimensions include organisational structures, human resources,
+        legal frameworks, technological characteristics and economic variables.
+    </p>
+
+
+    <h3>3.1 Issues in Technology Transfer — 5 Issues</h3>
+
+    <h4>1. Technical Issues</h4>
+
+    <p>
+        Technical problems arise when transferred technology is incompatible with
+        existing infrastructure, systems or local circumstances.
+    </p>
+
+    <p>
+        Underutilisation, malfunctions and delays may result from inadequate knowledge,
+        poor documentation, lack of local assistance, skill shortages and difficulty
+        obtaining replacement parts.
+    </p>
+
+    <p>
+        Differences in raw materials, environment, power supply and manufacturing
+        scale may also reduce effectiveness.
+    </p>
+
+
+    <h4>2. Economic and Financial Issues</h4>
+
+    <p>
+        Technology acquisition and implementation may involve licensing fees,
+        royalties, installation, training and maintenance costs.
+    </p>
+
+    <p>
+        Limited financial resources, restricted access to credit, exchange-rate
+        fluctuations and uncertain returns can increase risk.
+    </p>
+
+    <p>
+        Thorough economic assessment and long-term financial planning are required.
+    </p>
+
+
+    <h4>3. Organisational and Managerial Issues</h4>
+
+    <p>
+        Problems occur when existing structures and practices do not align with
+        the new technology.
+    </p>
+
+    <p>
+        Rigid systems, poor coordination, lack of vision, weak leadership and
+        inadequate project management can cause delays, cost overruns and failure.
+    </p>
+
+    <p>
+        Management commitment, planning and coordination are essential.
+    </p>
+
+
+    <h4>4. Human Resource and Cultural Issues</h4>
+
+    <p>
+        Employees may resist because of fear of job loss, increased workload or
+        uncertainty about advanced systems.
+    </p>
+
+    <p>
+        Training gaps can limit absorption. Cultural differences between providers
+        and recipients can create communication barriers and misunderstandings,
+        particularly in international transfers.
+    </p>
+
+
+    <h4>5. Legal and Intellectual Property Issues</h4>
+
+    <p>
+        These involve ownership rights, licensing conditions and protection of
+        proprietary knowledge.
+    </p>
+
+    <p>
+        Restrictions on use, modification and resale may limit flexibility.
+        Patent disputes, confidentiality clauses and contract terms can create
+        legal complications.
+    </p>
+
+    <p>
+        Clear contracts, legal compliance and proper enforcement of intellectual
+        property rights are essential.
+    </p>
+
+
+    <h3>3.2 Dimensions of Technology Transfer — 5 Dimensions</h3>
+
+    <table>
+
+        <tr>
+            <th>Dimension</th>
+            <th>What It Covers</th>
+            <th>Key Failure if Ignored</th>
+        </tr>
+
+        <tr>
+            <td><strong>Technical</strong></td>
+            <td>
+                Complexity, compatibility, reliability and adaptability.
+            </td>
+            <td>
+                Underutilisation and breakdowns.
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Economic</strong></td>
+            <td>
+                Costs, royalties, ROI, payback and financing.
+            </td>
+            <td>
+                Poor financial performance.
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Organisational</strong></td>
+            <td>
+                Structure, coordination, leadership and change.
+            </td>
+            <td>
+                Delays, inefficiency and failure.
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Human Resource</strong></td>
+            <td>
+                Skills, training, motivation, culture and resistance.
+            </td>
+            <td>
+                Resistance, errors and low absorption.
+            </td>
+        </tr>
+
+        <tr>
+            <td><strong>Legal & Institutional</strong></td>
+            <td>
+                Patents, licensing, contracts and policy support.
+            </td>
+            <td>
+                Disputes, restrictions and legal risks.
+            </td>
+        </tr>
+
+    </table>
+
+
+    <h3>3.3 Challenges in Effective Technology Absorption — 4 Challenges</h3>
+
+    <h4>1. Technology Dependence</h4>
+
+    <p>
+        Excessive dependence on external suppliers can limit an organisation's
+        ability to innovate, adapt and modify technology independently.
+    </p>
+
+    <p>
+        Developing internal skills through training, hands-on learning and knowledge
+        transfer reduces dependence and promotes technological independence.
+    </p>
+
+
+    <h4>2. Inadequate Infrastructure</h4>
+
+    <p>
+        Poor infrastructure can hinder absorption, particularly in developing
+        economies.
+    </p>
+
+    <p>
+        Modern technologies may require dependable power, transport, communication,
+        production systems, maintenance and spare parts.
+    </p>
+
+
+    <h4>3. Skill Gaps</h4>
+
+    <p>
+        Employees may lack the knowledge and skills required to use, maintain and
+        improve new technologies.
+    </p>
+
+    <p>
+        Systematic upskilling, training, mentoring and knowledge sharing are required
+        to build capability.
+    </p>
+
+
+    <h4>4. Adaptation Problems</h4>
+
+    <p>
+        Problems arise when technology is used without modification to local
+        materials, climate, infrastructure, regulations or market demands.
+    </p>
+
+    <p>
+        Practical experience, experimentation and feedback help align technology
+        with local needs.
+    </p>
+
+</div>
+
+
+<!-- MODELS -->
+<div class="section">
+
+    <h2>4. Models of Technology Transfer</h2>
+
+    <p>
+        Models provide conceptual frameworks for understanding how technology moves
+        from its source of creation to practical use.
+    </p>
+
+    <p>
+        They explain the processes, actors, interactions and mechanisms involved
+        in transferring technical knowledge, skills and innovations.
+    </p>
+
+
+    <h3>4.1 Concept and Importance of Models</h3>
+
+    <h4>Need for Models</h4>
+
+    <p>
+        Models provide frameworks for managing the complex process between entities.
+        They cover technical, economic, organisational and human factors.
+    </p>
+
+    <p>
+        Models help organisations identify, select, absorb and improve technology.
+        They also help policymakers plan, monitor and evaluate technology-transfer
+        initiatives.
+    </p>
+
+
+    <h4>Understanding Transfer Mechanisms</h4>
+
+    <p>
+        Important mechanisms include licensing, joint ventures, strategic alliances,
+        technical collaborations and FDI.
+    </p>
+
+    <p>
+        Models show how learning, adaptation, communication, training and feedback
+        occur during transfer.
+    </p>
+
+
+    <h3>4.2 Traditional Technology Transfer Models</h3>
+
+    <div class="important">
+        <strong>Traditional Models — 3:</strong>
+        Linear Model → Technology Push Model → Market Pull Model
+    </div>
+
+
+    <h4>1. Linear Model</h4>
+
+    <div class="memory-map">
+        Basic Scientific Research
+        →
+        Applied Research & Development
+        →
+        Production
+        →
+        Diffusion
+        →
+        Market / End Users
+    </div>
+
+    <p>
+        The Linear Model presents transfer as a simple, sequential and
+        unidirectional process.
+    </p>
+
+    <p>
+        Knowledge is assumed to flow from research institutions and laboratories
+        to industrial organisations and finally to consumers.
+    </p>
+
+    <p>
+        The model assumes scientific research is a primary driver of innovation.
+    </p>
+
+    <div class="warning">
+        <strong>Drawbacks:</strong>
+        It ignores actor interactions, user input, iterative learning, adaptation,
+        teamwork and ongoing change.
+    </div>
+
+
+    <h4>2. Technology Push Model</h4>
+
+    <p>
+        The Technology Push Model is a variant of the Linear Model that emphasises
+        technological innovation as the primary driving force.
+    </p>
+
+    <p>
+        New technologies originate from scientific research, laboratory experiments
+        and breakthroughs.
+    </p>
+
+    <p>
+        Organisations invest heavily in R&D and introduce technologies into the
+        market. Applications and customers are searched for after the technology
+        has been developed.
+    </p>
+
+    <p>
+        This model is common in high-technology industries such as electronics,
+        biotechnology, pharmaceuticals and aerospace.
+    </p>
+
+    <div class="warning">
+        <strong>Drawbacks:</strong>
+        It can ignore user preparedness, costs, market circumstances and consumer
+        preferences. A technically advanced technology may fail commercially if
+        user needs and adaptability are overlooked.
+    </div>
+
+
+    <h4>3. Market Pull Model</h4>
+
+    <p>
+        The Market Pull Model places market demand and user needs at the centre
+        of technology development and transfer.
+    </p>
+
+    <p>
+        Development is initiated in response to customer requirements, market
+        opportunities and competitive pressures.
+    </p>
+
+    <p>
+        Firms analyse market signals, customer feedback and unmet needs to guide
+        R&D and technology-acquisition decisions.
+    </p>
+
+    <p>
+        The model can increase adoption and commercial success by focusing on
+        practical problem-solving and customer needs.
+    </p>
+
+    <div class="warning">
+        <strong>Limitation:</strong>
+        Excessive reliance on market pull may discourage radical innovation and
+        game-changing breakthroughs.
+    </div>
+
+
+    <h3>Limitations of Traditional Models — 4 Points</h3>
+
+    <ol>
+        <li>
+            Disregard interaction, feedback and ongoing learning between academics,
+            businesses, consumers and institutions.
+        </li>
+
+        <li>
+            Overemphasise technical issues while overlooking organisational,
+            interpersonal, cultural and institutional elements.
+        </li>
+
+        <li>
+            Fail to capture the dynamic and iterative character of modern innovation.
+        </li>
+
+        <li>
+            Provide only a partial picture, leading to the development of interactive
+            and systems-oriented approaches.
+        </li>
+    </ol>
+
+
+    <h3>4.3 Qualitative Technology Transfer Models</h3>
+
+    <div class="exam-box">
+        Modern qualitative models treat technology transfer as a
+        <strong>two-way and iterative process</strong>.
+    </div>
+
+
+    <h4>1. Interactive Model</h4>
+
+    <p>
+        The Interactive Model views transfer as a two-way, dynamic process involving
+        continuous communication between users, transfer agencies and technology creators.
+    </p>
+
+    <p>
+        User input influences adaptation and future development.
+        Networks, partnerships and joint ventures enable continuous knowledge and
+        skill sharing.
+    </p>
+
+
+    <h4>2. Systems Approach</h4>
+
+    <p>
+        The Systems Approach views technology transfer as part of a larger
+        socioeconomic and institutional framework.
+    </p>
+
+    <p>
+        It considers relationships among businesses, research institutes,
+        government organisations, financial institutions and markets.
+    </p>
+
+    <p>
+        Technical, economic, organisational, human and legal subsystems must be aligned.
+    </p>
+
+
+    <h4>3. Feedback-Based Models</h4>
+
+    <p>
+        Feedback-Based Models emphasise continuous learning and development.
+        Transfer is viewed as a cycle of observation, assessment and modification.
+    </p>
+
+    <p>
+        User, operator and market feedback can identify technical problems,
+        operational inefficiencies and local misalignments.
+    </p>
+
+
+    <h4>4. Learning-Oriented Transfer</h4>
+
+    <p>
+        Learning-Oriented Transfer emphasises the development of long-term technical
+        capabilities rather than simple acquisition.
+    </p>
+
+    <p>
+        Organisations build absorptive ability through experimentation, training,
+        problem-solving and continuous improvement.
+    </p>
+
+    <p>
+        Organisations can gradually move from passive consumers to active innovators,
+        reducing dependence on external suppliers.
+    </p>
+
+
+    <h3>4.4 Other Technology Transfer Models</h3>
+
+    <h4>1. Network Model</h4>
+
+    <p>
+        The Network Model highlights linked networks of businesses, academic institutions,
+        research facilities, suppliers, consumers, financial institutions and
+        government organisations.
+    </p>
+
+    <p>
+        Formal partnerships and cooperative research, as well as informal exchanges
+        such as industrial clusters and professional relationships, facilitate transfer.
+    </p>
+
+
+    <h4>2. Triple Helix Model</h4>
+
+    <div class="memory-map">
+        UNIVERSITY ↔ INDUSTRY ↔ GOVERNMENT
+    </div>
+
+    <p>
+        The Triple Helix Model explains technology transfer through dynamic interactions
+        among government, business and academic institutions.
+    </p>
+
+    <ul>
+        <li>
+            <strong>Government:</strong>
+            Funding, regulatory frameworks and policy support.
+        </li>
+
+        <li>
+            <strong>Business:</strong>
+            Converts research into commercial goods and services.
+        </li>
+
+        <li>
+            <strong>Universities:</strong>
+            Produce knowledge and trained individuals.
+        </li>
+    </ul>
+
+
+    <h4>3. Open Innovation Model</h4>
+
+    <p>
+        Open Innovation uses both internal and external information for technology
+        development and transfer.
+    </p>
+
+    <p>
+        Businesses can collaborate with academic institutions, research centres,
+        startups, suppliers, consumers and even competitors.
+    </p>
+
+    <p>
+        Technology can enter through external sources and leave through outward
+        commercialisation of internal inventions.
+    </p>
+
+
+    <h4>4. International Technology Transfer Models</h4>
+
+    <p>
+        These models examine technology flows between countries, particularly
+        between developed and developing countries.
+    </p>
+
+    <p>
+        Cultural, legal, institutional and capacity gaps can complicate transfer.
+        Common mechanisms include FDI, licensing, joint ventures and strategic alliances.
+    </p>
+
+</div>
+
+
+<!-- MODES ROUTES GOVERNANCE -->
+<div class="section">
+
+    <h2>5. Modes, Routes and Governance of Technology Transfer</h2>
+
+    <p>
+        Modes describe different ways technology is exchanged.
+        Routes refer to the pathways through which technology flows.
+        Governance focuses on rules, agreements, policies and ethical frameworks
+        that regulate the process.
+    </p>
+
+
+    <h3>5.1 Technology Transfer Modes — 6 Modes</h3>
+
+    <div class="important">
+        <strong>Most Important — 10 Marks</strong>
+    </div>
+
+
+    <h4>1. Licensing</h4>
+
+    <p>
+        Licensing occurs when the owner or licensor grants another party,
+        the licensee, the right to use technology under agreed terms.
+    </p>
+
+    <p>
+        The technology may include patents, designs, trademarks, technical
+        know-how and process knowledge.
+    </p>
+
+    <p>
+        The licensee normally pays a fee or royalty.
+    </p>
+
+    <p>
+        Licensing provides access to proven technology without requiring heavy
+        independent R&D investment.
+    </p>
+
+    <p>
+        Agreements may specify scope, duration, territorial limits and confidentiality.
+    </p>
+
+    <p>
+        Concerns include dependence on the licensor and limited learning if
+        know-how is restricted.
+    </p>
+
+
+    <h4>2. Joint Ventures</h4>
+
+    <p>
+        Two or more parties create a new entity by sharing ownership, resources,
+        risks and rewards.
+    </p>
+
+    <p>
+        A foreign partner may contribute technology, expertise and management practices,
+        while a local partner contributes market knowledge, infrastructure and
+        regulatory support.
+    </p>
+
+    <p>
+        Joint ventures promote learning, adaptation and capability building through
+        continuous interaction.
+    </p>
+
+
+    <h4>3. Strategic Alliances</h4>
+
+    <p>
+        Strategic alliances are cooperative agreements between independent firms
+        that share technology, knowledge and resources without forming a new legal entity.
+    </p>
+
+    <p>
+        Activities may include technology sharing, co-development, research collaboration
+        and marketing partnerships.
+    </p>
+
+    <p>
+        They provide flexibility and access to complementary strengths.
+    </p>
+
+
+    <h4>4. Foreign Direct Investment (FDI)</h4>
+
+    <p>
+        FDI occurs when a firm invests directly in production or business operations
+        in another country.
+    </p>
+
+    <p>
+        Transfer can occur through wholly owned subsidiaries or majority ownership.
+        It can bring advanced technology, management practices and organisational systems.
+    </p>
+
+    <p>
+        FDI also promotes skill development, employment generation and industrial growth.
+    </p>
+
+
+    <h4>5. Turnkey Projects</h4>
+
+    <p>
+        In a turnkey project, the technology provider designs, builds, installs and
+        commissions a complete facility and hands it over in operational condition.
+    </p>
+
+    <p>
+        It is common in infrastructure, power plants and heavy industries.
+    </p>
+
+    <p>
+        It enables quick implementation and can reduce technical risk, but learning
+        and internal capability development may be limited if training and knowledge
+        transfer are inadequate.
+    </p>
+
+
+    <h4>6. Consultancy and Technical Services</h4>
+
+    <p>
+        Technology is transferred through advisory services, training, troubleshooting
+        and technical assistance.
+    </p>
+
+    <p>
+        Consultants provide specialised knowledge without transferring ownership.
+        This mode can support process improvement, capacity building and incremental
+        innovation.
+    </p>
+
+
+    <h3>Modes — Exam Comparison Table</h3>
+
+    <table>
+
+        <tr>
+            <th>Mode</th>
+            <th>Best For</th>
+            <th>Cost</th>
+            <th>Learning</th>
+        </tr>
+
+        <tr>
+            <td>Licensing</td>
+            <td>Small firms, quick entry</td>
+            <td>Low</td>
+            <td>Limited</td>
+        </tr>
+
+        <tr>
+            <td>Joint Venture</td>
+            <td>Complex technology, regulated industries</td>
+            <td>Medium</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>Strategic Alliance</td>
+            <td>Fast-changing, knowledge-intensive industries</td>
+            <td>Medium</td>
+            <td>Medium-High</td>
+        </tr>
+
+        <tr>
+            <td>FDI</td>
+            <td>Large firms, long-term large-scale transfer</td>
+            <td>High</td>
+            <td>High</td>
+        </tr>
+
+        <tr>
+            <td>Turnkey</td>
+            <td>Infrastructure and heavy industries</td>
+            <td>High</td>
+            <td>Low initially</td>
+        </tr>
+
+        <tr>
+            <td>Consultancy</td>
+            <td>Process improvement and capacity building</td>
+            <td>Low</td>
+            <td>Medium</td>
+        </tr>
+
+    </table>
+
+
+    <h3>5.2 Routes / Channels of Technology Transfer</h3>
+
+    <h4>1. Market-Based Channels</h4>
+
+    <p>
+        Market-based channels operate through commercial transactions where
+        technology is exchanged for economic value.
+    </p>
+
+    <p>
+        Examples include licensing, patent sales, FDI, joint ventures, strategic
+        alliances and turnkey projects.
+    </p>
+
+    <p>
+        These channels are based on contracts, prices and ownership rights and
+        provide legal clarity and financial incentives.
+    </p>
+
+
+    <h4>2. Non-Market Channels</h4>
+
+    <p>
+        Non-market channels do not involve direct commercial transactions.
+    </p>
+
+    <p>
+        Examples include government programmes, public research institutions,
+        international aid, technical cooperation, training and knowledge-sharing
+        initiatives.
+    </p>
+
+    <p>
+        These channels are particularly important for small firms, developing
+        countries and emerging sectors.
+    </p>
+
+
+    <h4>3. Formal and Informal Routes</h4>
+
+    <table>
+
+        <tr>
+            <th>Formal Routes</th>
+            <th>Informal Routes</th>
+        </tr>
+
+        <tr>
+            <td>
+                Structured and documented.
+                <br><br>
+                Examples: licensing, joint ventures, consultancy contracts,
+                research collaborations.
+            </td>
+
+            <td>
+                Based on personal contacts and relationships.
+                <br><br>
+                Examples: employee mobility, professional networks, conferences,
+                publications and informal interactions.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Provide legal protection and clarity.
+            </td>
+
+            <td>
+                Particularly useful for tacit knowledge, trust and learning.
+            </td>
+        </tr>
+
+    </table>
+
+
+    <h4>4. Role of MNCs and Research Institutions</h4>
+
+    <p>
+        MNCs are major channels through FDI, subsidiaries, joint ventures and global
+        supply chains. They can transfer advanced technologies, management practices
+        and organisational systems.
+    </p>
+
+    <p>
+        Research institutions generate knowledge, develop technologies and facilitate
+        collaboration between industry and government.
+    </p>
+
+
+    <h4>5. Role of Universities and R&D Laboratories</h4>
+
+    <p>
+        Universities and R&D laboratories create knowledge, develop innovations
+        and train skilled workers.
+    </p>
+
+    <p>
+        They support technology transfer through patents, spin-off companies,
+        consultancy and industry collaboration.
+    </p>
+
+
+    <h3>5.3 Code of Conduct for Technology Transfer — 5 Points</h3>
+
+    <h4>1. Need for Regulation</h4>
+
+    <p>
+        Regulation is important because bargaining power may be unequal between
+        providers and recipients, particularly in international transfers.
+    </p>
+
+    <p>
+        Regulatory frameworks promote transparency, fairness and accountability
+        while protecting against unfavourable terms and misuse of intellectual
+        property.
+    </p>
+
+
+    <h4>2. Fair Pricing and Royalty Norms</h4>
+
+    <p>
+        Excessive fees and royalty rates can create financial burdens.
+        Fair pricing should balance the interests of both parties and reflect
+        technology value, performance and market conditions.
+    </p>
+
+
+    <h4>3. Avoidance of Restrictive Clauses</h4>
+
+    <p>
+        Restrictive clauses may limit the recipient's ability to use, modify or
+        improve technology.
+    </p>
+
+    <p>
+        Flexible agreements support learning, adaptation, innovation and
+        technological self-reliance.
+    </p>
+
+
+    <h4>4. Protection of National Interest</h4>
+
+    <p>
+        Governments may ensure that technology-transfer agreements contribute to
+        economic growth, employment generation and capability building.
+    </p>
+
+    <p>
+        Measures may include local content requirements, skill development and
+        absorption provisions.
+    </p>
+
+
+    <h4>5. Ethical and Sustainable Practices</h4>
+
+    <p>
+        Technology transfer should comply with environmental standards, safety
+        norms and social responsibility.
+    </p>
+
+    <p>
+        Ethical conduct builds trust and supports long-term partnerships.
+    </p>
+
+</div>
+
+
+<!-- GOVERNMENT SUPPORT -->
+<div class="section">
+
+    <h2>6. Government Support and Technology Transfer Agreements</h2>
+
+
+    <h3>6.1 Government Initiatives for Technology Transfer</h3>
+
+    <h4>1. Role of Government in Technology Diffusion</h4>
+
+    <p>
+        Government acts as a facilitator, regulator and catalyst by creating
+        supportive policy and institutional environments.
+    </p>
+
+    <p>
+        It promotes industry-research collaboration, removes barriers to adoption,
+        establishes regulations and standards and provides incentives.
+    </p>
+
+
+    <h4>2. Public R&D Institutions</h4>
+
+    <p>
+        Public R&D institutions conduct basic and applied research relevant to
+        national priorities.
+    </p>
+
+    <p>
+        They can provide technical support through consultancy, licensing and
+        collaborative projects and can help adapt imported technologies to
+        local conditions.
+    </p>
+
+
+    <h4>3. Technology Parks and Incubators</h4>
+
+    <p>
+        Technology parks and incubators provide infrastructure and support services
+        that promote innovation and technology transfer.
+    </p>
+
+    <p>
+        Incubators may provide mentoring, technical assistance and access to networks,
+        helping commercialise research outputs.
+    </p>
+
+
+    <h4>4. Policy Incentives and Funding Support</h4>
+
+    <p>
+        Governments may provide tax benefits, subsidies, grants and soft loans.
+        Such support reduces financial risk and encourages investment in advanced
+        technologies.
+    </p>
+
+
+    <h4>5. Support for MSMEs and Startups</h4>
+
+    <p>
+        Targeted support may include financial assistance, training, infrastructure
+        and access to technology.
+    </p>
+
+    <p>
+        Such measures can strengthen technological capabilities, innovation and
+        employment generation.
+    </p>
+
+
+    <h3>6.2 Technology Transfer Agreement — 6 Points</h3>
+
+    <h4>a) Meaning and Importance</h4>
+
+    <div class="definition">
+        <strong>Definition:</strong>
+        A Technology Transfer Agreement is a legal document regulating the transfer
+        of technology, knowledge, patents or processes from one party to another.
+    </div>
+
+    <p>
+        It specifies terms, conditions and scope of use, providing legal certainty
+        and safeguarding both parties' interests.
+    </p>
+
+    <p>
+        It can also define responsibilities for training, technical support and
+        performance standards.
+    </p>
+
+
+    <h4>b) Types of Agreements — 5 Types</h4>
+
+    <ol>
+        <li>
+            <strong>Licensing Agreements:</strong>
+            Right to use specific technology for royalties or fees.
+        </li>
+
+        <li>
+            <strong>Technical Collaboration Agreements:</strong>
+            Know-how, training and technical support.
+        </li>
+
+        <li>
+            <strong>Joint Venture Agreements:</strong>
+            Shared ownership and deeper cooperation.
+        </li>
+
+        <li>
+            <strong>Consultancy Contracts:</strong>
+            Advisory and technical services.
+        </li>
+
+        <li>
+            <strong>Turnkey Project Agreements:</strong>
+            Delivery of a fully operational facility.
+        </li>
+    </ol>
+
+
+    <h4>c) Key Clauses and Conditions</h4>
+
+    <p>Important clauses include:</p>
+
+    <ul>
+        <li>Scope of technology</li>
+        <li>Duration</li>
+        <li>Geographical territory</li>
+        <li>Exclusivity</li>
+        <li>Payment terms</li>
+        <li>Royalty rates</li>
+        <li>Technical assistance</li>
+        <li>Training</li>
+        <li>Technical documentation</li>
+        <li>Performance guarantees</li>
+        <li>Quality standards</li>
+        <li>Reporting and monitoring</li>
+        <li>Audits</li>
+    </ul>
+
+
+    <h4>d) Rights and Obligations of Parties</h4>
+
+    <table>
+
+        <tr>
+            <th>Provider</th>
+            <th>Recipient</th>
+        </tr>
+
+        <tr>
+            <td>
+                Supply agreed technology.
+                <br>
+                Provide technical documentation.
+                <br>
+                Provide training and support services.
+            </td>
+
+            <td>
+                Right to use technology as specified.
+                <br>
+                Make required payments.
+                <br>
+                Maintain confidentiality.
+                <br>
+                Follow usage conditions.
+            </td>
+        </tr>
+
+    </table>
+
+
+    <h4>e) Confidentiality and IP Protection</h4>
+
+    <p>
+        Confidentiality clauses protect proprietary information, trade secrets and
+        know-how from unauthorised disclosure.
+    </p>
+
+    <p>
+        IP clauses define ownership and permitted use of patents, trademarks and
+        copyrights.
+    </p>
+
+    <p>
+        Strong IP protection encourages technology sharing and long-term cooperation.
+    </p>
+
+
+    <h4>f) Termination and Dispute Resolution</h4>
+
+    <p>
+        Agreements should define conditions for termination, such as breach of
+        contract, non-payment or expiry.
+    </p>
+
+    <p>
+        Dispute resolution may involve arbitration, mediation or legal proceedings.
+    </p>
+
+    <p>
+        These mechanisms provide a structured way to resolve disagreements and
+        minimise disruption.
+    </p>
+
+</div>
+
+
+<!-- SUMMARY -->
+<div class="section">
+
+    <h2>7. Summary — For Exam</h2>
+
+    <ul>
+
+        <li>
+            Technology transfer is the movement of technological knowledge,
+            skills and technology from one entity to another for practical use.
+        </li>
+
+        <li>
+            It includes technical knowledge, management techniques, operational
+            skills and physical equipment.
+        </li>
+
+        <li>
+            Effective transfer helps companies improve competitiveness and efficiency
+            without spending excessively on independent R&D.
+        </li>
+
+        <li>
+            The process includes identifying the technology need, searching and
+            selecting technology, evaluating feasibility, negotiating, implementing,
+            absorbing, adapting and continuously learning.
+        </li>
+
+        <li>
+            Technology transfer is affected by technical, economic, organisational,
+            human-resource, cultural and legal factors.
+        </li>
+
+        <li>
+            Traditional models generally view transfer as one-way, while modern
+            models emphasise interaction, feedback, learning and adaptation.
+        </li>
+
+        <li>
+            Major transfer modes include licensing, joint ventures, FDI,
+            strategic alliances, turnkey projects and consultancy.
+        </li>
+
+        <li>
+            Governance mechanisms and codes of conduct help ensure fairness,
+            transparency, IP protection and sustainable transfer.
+        </li>
+
+        <li>
+            Governments support transfer through policies, public R&D institutions,
+            technology parks, incubators, incentives and MSME/startup programmes.
+        </li>
+
+        <li>
+            Well-managed technology transfer can promote industrial development,
+            innovation capability and long-term economic growth.
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- GLOSSARY -->
+<div class="section">
+
+    <h2>8. Glossary — 15 Definitions</h2>
+
+    <ol>
+
+        <li>
+            <strong>Technology Transfer:</strong>
+            Movement of knowledge, skills or technology from one entity to another
+            for practical use.
+        </li>
+
+        <li>
+            <strong>Technology Package:</strong>
+            Bundle including machinery, know-how, manuals, training and support
+            needed to use technology.
+        </li>
+
+        <li>
+            <strong>Know-how:</strong>
+            Practical technical knowledge required to operate or manage technology
+            effectively.
+        </li>
+
+        <li>
+            <strong>Licensing:</strong>
+            Legal agreement allowing one firm to use another firm's technology or
+            intellectual property for a fee.
+        </li>
+
+        <li>
+            <strong>Joint Venture:</strong>
+            Partnership between firms to share resources, risks and technology
+            for mutual benefit.
+        </li>
+
+        <li>
+            <strong>Turnkey Project:</strong>
+            Project where the supplier designs, builds and hands over a
+            ready-to-operate facility.
+        </li>
+
+        <li>
+            <strong>Technology Absorption:</strong>
+            Ability of a firm to understand, adapt and use transferred technology
+            efficiently.
+        </li>
+
+        <li>
+            <strong>Adaptation:</strong>
+            Modification of imported technology to suit local conditions or
+            requirements.
+        </li>
+
+        <li>
+            <strong>IPR:</strong>
+            Legal protections for inventions, designs and proprietary knowledge.
+        </li>
+
+        <li>
+            <strong>Technology Diffusion:</strong>
+            Spread of technology across industries, firms or regions over time.
+        </li>
+
+        <li>
+            <strong>Technology Transfer Agreement:</strong>
+            Formal contract specifying terms for sharing technology.
+        </li>
+
+        <li>
+            <strong>Innovation Capability:</strong>
+            Capacity of an organisation to develop or improve technologies.
+        </li>
+
+        <li>
+            <strong>Human Capital Development:</strong>
+            Training and skill enhancement required to support new technology use.
+        </li>
+
+        <li>
+            <strong>FDI:</strong>
+            Investment by foreign firms that often brings technology and expertise.
+        </li>
+
+        <li>
+            <strong>Technology Governance:</strong>
+            Policies, rules and ethical practices guiding technology transfer and use.
+        </li>
+
+    </ol>
+
+</div>
+
+
+<!-- CASE STUDY -->
+<div class="section">
+
+    <h2>9. Case Study — Indian Auto Parts Company</h2>
+
+    <div class="intro-box">
+
+        <p>
+            An Indian medium-sized auto-parts manufacturer wanted to reduce export
+            rejection rates and improve quality.
+        </p>
+
+        <p>
+            A foreign business specialising in precision machining entered into a
+            technology-transfer arrangement with the Indian company.
+        </p>
+
+    </div>
+
+    <p>
+        The Indian company received state-of-the-art CNC equipment, process manuals
+        and technical training for operators and engineers.
+    </p>
+
+    <p>
+        Initially, productivity increased only slightly because staff were confused
+        about the new software interface and maintenance processes.
+    </p>
+
+    <p>
+        Management responded by investing in supplementary training, forming
+        interdisciplinary learning teams and adjusting processes.
+    </p>
+
+    <p>
+        The result was a 30% decrease in defects, increased production speed and
+        acquisition of new export contracts within one year.
+    </p>
+
+    <p>
+        The company also began improving its own processes, increasing its internal
+        innovation potential.
+    </p>
+
+
+    <h3>Q1. Factors Initially Limiting Success</h3>
+
+    <ul>
+
+        <li>
+            <strong>Skill gaps:</strong>
+            Staff were confused about the software interface and maintenance,
+            showing insufficient technical know-how.
+        </li>
+
+        <li>
+            <strong>Weak absorptive capacity:</strong>
+            Hardware was transferred without sufficient depth of training.
+        </li>
+
+        <li>
+            <strong>Adaptation problem:</strong>
+            Technology was not initially customised to local workforce skills
+            and workflows.
+        </li>
+
+        <li>
+            <strong>Human resource and cultural issues:</strong>
+            Resistance, confusion and lack of interdisciplinary coordination.
+        </li>
+
+        <li>
+            <strong>Technical issues:</strong>
+            Inadequate understanding of documentation and insufficient local support.
+        </li>
+
+    </ul>
+
+
+    <h3>Q2. How Training and Organisational Changes Improved Absorption</h3>
+
+    <ol>
+
+        <li>
+            <strong>Assimilation:</strong>
+            Supplementary training for operators and engineers built internal knowledge.
+        </li>
+
+        <li>
+            <strong>Adaptation:</strong>
+            Processes were adjusted to fit the new CNC technology, local materials
+            and organisational needs.
+        </li>
+
+        <li>
+            <strong>Organisational dimension:</strong>
+            Interdisciplinary learning teams improved coordination, communication
+            and knowledge sharing.
+        </li>
+
+        <li>
+            <strong>Learning-oriented transfer:</strong>
+            The company moved from passive use towards active learning,
+            experimentation and continuous improvement.
+        </li>
+
+        <li>
+            <strong>Effective utilisation:</strong>
+            Defects decreased by 30% and production speed increased.
+        </li>
+
+    </ol>
+
+    <div class="warning">
+        <strong>Key Lesson:</strong>
+        Adoption alone is not enough. Effective technology transfer requires
+        learning mechanisms, management commitment and organisational readiness.
+    </div>
+
+
+    <h3>Q3. Long-Term Strategic Benefits</h3>
+
+    <ol>
+
+        <li>
+            Improved productivity and efficiency, including a 30% reduction in defects.
+        </li>
+
+        <li>
+            Enhanced product quality, reduced export rejection and new export contracts.
+        </li>
+
+        <li>
+            Development of technical capabilities and reduced dependence on external experts.
+        </li>
+
+        <li>
+            Enhanced innovation potential through improvement of internal processes.
+        </li>
+
+        <li>
+            Long-term competitive advantage based on internal knowledge.
+        </li>
+
+        <li>
+            Greater technology independence and self-reliance through stronger
+            absorptive capacity.
+        </li>
+
+    </ol>
+
+    <div class="exam-box">
+        <strong>Case Study Lesson:</strong>
+        Technology transfer alone is insufficient. Absorption capacity, training,
+        organisational learning, cooperation, adaptation and continual development
+        are crucial for converting transferred technology into sustainable capability.
+    </div>
+
+</div>
+
+
+<!-- FINAL REVISION -->
+<div class="section">
+
+    <h2>10. Final Revision Sheet</h2>
+
+    <div class="revision-grid">
+
+        <div class="revision-card">
+            <h3>Technology Transfer</h3>
+            <p>
+                Movement of knowledge, skills and technology from one entity
+                to another for practical use.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Transfer Package</h3>
+            <p>
+                Hardware + Software/Know-how + Managerial Practices +
+                Training + Documentation/Support.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Objectives — 9</h3>
+            <p>
+                Access technology, reduce R&D time/cost, bridge technology gaps,
+                increase production, improve quality, reduce imports, develop skills,
+                use resources efficiently, achieve independence and competitiveness.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Transfer Process — 6</h3>
+            <p>
+                Need Identification → Search & Selection → Technical/Economic
+                Feasibility → Negotiation → Implementation/Absorption/Adaptation
+                → Learning & Improvement.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Issues — 5</h3>
+            <p>
+                Technical → Economic/Financial → Organisational/Managerial →
+                Human Resource/Cultural → Legal/IP.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Dimensions — 5</h3>
+            <p>
+                Technical → Economic → Organisational →
+                Human Resource → Legal & Institutional.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Absorption Challenges — 4</h3>
+            <p>
+                Technology Dependence → Inadequate Infrastructure →
+                Skill Gaps → Adaptation Problems.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Traditional Models — 3</h3>
+            <p>
+                Linear Model → Technology Push → Market Pull.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Qualitative Models — 4</h3>
+            <p>
+                Interactive → Systems Approach → Feedback-Based →
+                Learning-Oriented.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Other Models — 4</h3>
+            <p>
+                Network → Triple Helix → Open Innovation →
+                International Technology Transfer.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Modes — 6</h3>
+            <p>
+                Licensing → Joint Venture → Strategic Alliance →
+                FDI → Turnkey → Consultancy & Technical Services.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Routes</h3>
+            <p>
+                Market-Based → Non-Market → Formal → Informal.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Code of Conduct — 5</h3>
+            <p>
+                Regulation → Fair Pricing/Royalties →
+                Avoid Restrictive Clauses → National Interest →
+                Ethical & Sustainable Practices.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Government Support — 5</h3>
+            <p>
+                Government Diffusion Role → Public R&D →
+                Technology Parks/Incubators → Policy/Funding →
+                MSME & Startup Support.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Agreement Types — 5</h3>
+            <p>
+                Licensing → Technical Collaboration → Joint Venture →
+                Consultancy → Turnkey.
+            </p>
+        </div>
+
+        <div class="revision-card">
+            <h3>Agreement Clauses — 6</h3>
+            <p>
+                Meaning/Importance → Types → Key Clauses →
+                Rights/Obligations → Confidentiality/IP →
+                Termination/Dispute Resolution.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- MEMORY MAP -->
+<div class="section">
+
+    <h2>11. One-Minute Memory Map</h2>
+
+    <div class="memory-map">
+
+        TECHNOLOGY TRANSFER
+        <br>
+        ↓
+        <br>
+        Need → Search → Feasibility → Negotiate → Implement/Absorb/Adapt → Learn
+        <br><br>
+
+        TRANSFER PACKAGE
+        <br>
+        ↓
+        <br>
+        Hardware + Know-how + Management + Training + Documentation
+        <br><br>
+
+        TRANSFER MODELS
+        <br>
+        ↓
+        <br>
+        Linear → Technology Push → Market Pull
+        <br>
+        ↓
+        <br>
+        Interactive → Systems → Feedback → Learning
+        <br>
+        ↓
+        <br>
+        Network → Triple Helix → Open Innovation → International
+        <br><br>
+
+        MODES
+        <br>
+        ↓
+        <br>
+        Licensing → JV → Alliance → FDI → Turnkey → Consultancy
+        <br><br>
+
+        GOVERNANCE
+        <br>
+        ↓
+        <br>
+        Regulation → Fair Pricing → Flexible Clauses →
+        National Interest → Ethical Sustainability
+        <br><br>
+
+        AGREEMENT
+        <br>
+        ↓
+        <br>
+        Scope → Duration → Territory → Payment/Royalty →
+        Training → IP → Termination/Dispute
+
+    </div>
+
+</div>
+
+
+<!-- GOLDEN SENTENCES -->
+<div class="section">
+
+    <h2>12. Golden Sentences for Exam</h2>
+
+    <div class="golden">
+        <strong>1.</strong>
+        Technology transfer is not just hardware but a complete package:
+        hardware + software/know-how + managerial practices + training +
+        documentation + support.
+    </div>
+
+    <div class="golden">
+        <strong>2.</strong>
+        Adoption is the decision to use, while absorption is the depth of effective
+        use; without absorption, technology transfer may fail to deliver its benefits.
+    </div>
+
+    <div class="golden">
+        <strong>3.</strong>
+        Traditional models assume one-way linear flow, whereas modern models
+        recognise two-way interaction, feedback, learning and adaptation.
+    </div>
+
+    <div class="golden">
+        <strong>4.</strong>
+        Licensing can provide quick access to technology, while joint ventures
+        and FDI can support deeper integration and learning.
+    </div>
+
+    <div class="golden">
+        <strong>5.</strong>
+        Effective technology transfer requires balancing technical compatibility,
+        economic viability, organisational readiness, human skills and
+        legal/institutional support.
+    </div>
+
+    <div class="golden">
+        <strong>6.</strong>
+        Government support can include policy clarity, financial incentives,
+        R&D institutions, technology parks, incubators, MSME/startup support
+        and university-industry-government collaboration.
+    </div>
+
+</div>
+
+
+<!-- QUICK EXAM CHECKLIST -->
+<div class="section">
+
+    <h2>13. Quick Exam Checklist</h2>
+
+    <div class="exam-box">
+
+        <p>
+            <strong>Before the exam, make sure you can write these without looking:</strong>
+        </p>
+
+        <ul>
+            <li>Definition and significance of Technology Transfer</li>
+            <li>Objectives of Technology Transfer — 9 points</li>
+            <li>Technology Transfer Process — 6 stages</li>
+            <li>Technology Transfer Package — 5 components</li>
+            <li>Issues in Technology Transfer — 5</li>
+            <li>Dimensions of Technology Transfer — 5</li>
+            <li>Challenges in Technology Absorption — 4</li>
+            <li>Traditional Technology Transfer Models — 3</li>
+            <li>Limitations of Traditional Models — 4</li>
+            <li>Qualitative Models — 4</li>
+            <li>Other Technology Transfer Models — 4</li>
+            <li>Technology Transfer Modes — 6</li>
+            <li>Routes / Channels — 5</li>
+            <li>Code of Conduct — 5</li>
+            <li>Government Initiatives — 5</li>
+            <li>Technology Transfer Agreement — 6 points</li>
+            <li>Indian Auto Parts Company Case Study</li>
+            <li>15 Glossary Definitions</li>
+            <li>Golden Sentences</li>
+        </ul>
+
+    </div>
+
+</div>
+
+
+<!-- FOOTER -->
+<div class="footer">
+
+    <strong>UNIT 7 — TECHNOLOGY TRANSFER</strong>
+    <br>
+    Complete Exam Notes • Transfer • Absorption • Models • Modes • Governance • Agreements
+
+</div>
+
+</div>
+
+</body>
+</html>
