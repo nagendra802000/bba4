@@ -2,49 +2,434 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My BBA Study App</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#172554"
+    >
+
+    <title>BBA Semester 4 Study</title>
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            padding: 0;
             background: #f4f6f8;
+            font-family: Arial, Helvetica, sans-serif;
             color: #1f2937;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 30px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
         }
+
+        /* HEADER */
 
         .header {
-            background: linear-gradient(135deg, #172554, #2563eb);
+            background: linear-gradient(
+                135deg,
+                #172554,
+                #2563eb
+            );
+
             color: white;
-            padding: 40px 25px;
+
+            padding: 35px 25px;
+
             border-radius: 18px;
-            text-align: center;
+
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, .12);
         }
 
-        .card {
+        .header h1 {
+            margin: 0 0 8px 0;
+            font-size: 30px;
+        }
+
+        .header p {
+            margin: 0;
+            opacity: .9;
+        }
+
+        /* WELCOME */
+
+        .welcome {
             background: white;
-            margin-top: 20px;
+
             padding: 25px;
+
             border-radius: 15px;
-            box-shadow: 0 5px 18px rgba(0,0,0,.07);
+
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 5px 18px rgba(0, 0, 0, .07);
         }
 
-        .button {
-            display: inline-block;
-            padding: 12px 20px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-top: 10px;
+        .welcome h2 {
+            margin-top: 0;
+            color: #1d4ed8;
         }
+
+        /* PROGRESS */
+
+        .progress-card {
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 5px 18px rgba(0, 0, 0, .07);
+        }
+
+        .progress-header {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            margin-bottom: 10px;
+        }
+
+        .progress-header h2 {
+            margin: 0;
+
+            color: #1d4ed8;
+
+            font-size: 21px;
+        }
+
+        .progress-percent {
+            font-size: 22px;
+
+            font-weight: bold;
+
+            color: #2563eb;
+        }
+
+        .progress-bar {
+            width: 100%;
+
+            height: 14px;
+
+            background: #e5e7eb;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+
+            width: 0%;
+
+            background: linear-gradient(
+                90deg,
+                #2563eb,
+                #3b82f6
+            );
+
+            border-radius: 20px;
+
+            transition: width .4s ease;
+        }
+
+        /* CONTINUE */
+
+        .continue-card {
+            background: #eff6ff;
+
+            border-left: 5px solid #2563eb;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            margin-bottom: 20px;
+        }
+
+        .continue-card h2 {
+            margin-top: 0;
+
+            color: #1e40af;
+        }
+
+        .continue-info {
+            margin-bottom: 15px;
+
+            color: #475569;
+        }
+
+        .continue-button {
+            display: inline-block;
+
+            background: #2563eb;
+
+            color: white;
+
+            padding: 13px 22px;
+
+            border-radius: 9px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            border: none;
+
+            cursor: pointer;
+
+            font-size: 15px;
+        }
+
+        .continue-button:hover {
+            background: #1d4ed8;
+        }
+
+        /* SUBJECT */
+
+        .section-title {
+            color: #1d4ed8;
+
+            border-left: 5px solid #2563eb;
+
+            padding-left: 12px;
+
+            margin: 30px 0 15px;
+        }
+
+        .subject-card {
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 18px rgba(0, 0, 0, .07);
+
+            margin-bottom: 20px;
+        }
+
+        .subject-title {
+            margin-top: 0;
+
+            color: #1e40af;
+        }
+
+        .subject-description {
+            color: #64748b;
+
+            margin-bottom: 20px;
+        }
+
+        /* UNITS */
+
+        .units {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(240px, 1fr));
+
+            gap: 14px;
+        }
+
+        .unit-card {
+            background: #f8fafc;
+
+            border: 1px solid #dbeafe;
+
+            border-radius: 12px;
+
+            padding: 18px;
+
+            transition: .2s;
+        }
+
+        .unit-card:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, .08);
+        }
+
+        .unit-number {
+            font-size: 13px;
+
+            color: #64748b;
+
+            margin-bottom: 5px;
+        }
+
+        .unit-title {
+            font-size: 17px;
+
+            font-weight: bold;
+
+            color: #1f2937;
+
+            margin-bottom: 12px;
+        }
+
+        .unit-progress {
+            height: 8px;
+
+            background: #e5e7eb;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            margin-bottom: 10px;
+        }
+
+        .unit-progress-fill {
+            height: 100%;
+
+            background: #2563eb;
+
+            width: 0%;
+        }
+
+        .unit-footer {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+        }
+
+        .unit-percent {
+            font-size: 13px;
+
+            color: #64748b;
+        }
+
+        .open-unit {
+            text-decoration: none;
+
+            color: #2563eb;
+
+            font-weight: bold;
+
+            font-size: 14px;
+        }
+
+        /* STATS */
+
+        .stats {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(180px, 1fr));
+
+            gap: 15px;
+
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: white;
+
+            padding: 20px;
+
+            border-radius: 14px;
+
+            text-align: center;
+
+            box-shadow:
+                0 5px 18px rgba(0, 0, 0, .07);
+        }
+
+        .stat-number {
+            font-size: 28px;
+
+            font-weight: bold;
+
+            color: #2563eb;
+        }
+
+        .stat-label {
+            color: #64748b;
+
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            text-align: center;
+
+            padding: 25px;
+
+            color: #64748b;
+
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            .container {
+                padding: 12px;
+            }
+
+            .header {
+                padding: 28px 20px;
+
+                border-radius: 15px;
+            }
+
+            .header h1 {
+                font-size: 25px;
+            }
+
+            .welcome,
+            .progress-card,
+            .subject-card {
+                padding: 20px;
+            }
+
+            .progress-header {
+                align-items: flex-start;
+
+                gap: 10px;
+            }
+
+            .units {
+                grid-template-columns: 1fr;
+            }
+
+            .continue-button {
+                width: 100%;
+
+                text-align: center;
+            }
+        }
+
     </style>
 </head>
 
@@ -52,28 +437,764 @@
 
 <div class="container">
 
-    <div class="header">
+    <!-- HEADER -->
+
+    <header class="header">
+
         <h1>BBA Semester 4</h1>
-        <p>Personal Learning Dashboard</p>
-    </div>
-
-    <div class="card">
-        <h2>Welcome Back!</h2>
 
         <p>
-            This will become my personal BBA learning application.
+            Personal Learning Dashboard
         </p>
+
+    </header>
+
+
+    <!-- WELCOME -->
+
+    <section class="welcome">
+
+        <h2>Welcome Back 👋</h2>
 
         <p>
-            Management of Technology — Units 1–7
+            Continue your BBA Semester 4 preparation
+            from where you stopped last time.
         </p>
 
-        <a href="#" class="button">
-            Continue Learning
+    </section>
+
+
+    <!-- OVERALL PROGRESS -->
+
+    <section class="progress-card">
+
+        <div class="progress-header">
+
+            <h2>Overall Progress</h2>
+
+            <span
+                class="progress-percent"
+                id="overallPercent"
+            >
+                0%
+            </span>
+
+        </div>
+
+        <div class="progress-bar">
+
+            <div
+                class="progress-fill"
+                id="overallProgress"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTINUE LEARNING -->
+
+    <section class="continue-card">
+
+        <h2>▶ Continue Learning</h2>
+
+        <div
+            class="continue-info"
+            id="continueInfo"
+        >
+            You haven't started studying yet.
+        </div>
+
+        <a
+            href="subjects/Introduction%20to%20Technology%20BBA%20Sem%204/unit-1.html"
+            class="continue-button"
+            id="continueButton"
+        >
+            Start Unit 1
         </a>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <div class="stats">
+
+        <div class="stat-card">
+
+            <div
+                class="stat-number"
+                id="completedUnits"
+            >
+                0
+            </div>
+
+            <div class="stat-label">
+                Units Completed
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div
+                class="stat-number"
+                id="totalUnits"
+            >
+                7
+            </div>
+
+            <div class="stat-label">
+                Total Units
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div
+                class="stat-number"
+                id="studyStreak"
+            >
+                0
+            </div>
+
+            <div class="stat-label">
+                Study Streak
+            </div>
+
+        </div>
+
     </div>
+
+
+    <!-- SUBJECT -->
+
+    <h2 class="section-title">
+        📚 My Subjects
+    </h2>
+
+
+    <section class="subject-card">
+
+        <h2 class="subject-title">
+            Introduction to Technology
+        </h2>
+
+        <p class="subject-description">
+            BBA Semester 4 — Management of Technology
+        </p>
+
+
+        <div class="units">
+
+
+            <!-- UNIT 1 -->
+
+            <div class="unit-card">
+
+                <div class="unit-number">
+                    UNIT 1
+                </div>
+
+                <div class="unit-title">
+                    Technology & Management
+                </div>
+
+                <div class="unit-progress">
+
+                    <div
+                        class="unit-progress-fill"
+                        id="progress-unit-1"
+                    ></div>
+
+                </div>
+
+                <div class="unit-footer">
+
+                    <span
+                        class="unit-percent"
+                        id="percent-unit-1"
+                    >
+                        0%
+                    </span>
+
+                    <a
+                        class="open-unit"
+                        href="subjects/Introduction%20to%20Technology%20BBA%20Sem%204/unit-1.html"
+                    >
+                        Open →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- UNIT 2 -->
+
+            <div class="unit-card">
+
+                <div class="unit-number">
+                    UNIT 2
+                </div>
+
+                <div class="unit-title">
+                    Impact of Technology
+                </div>
+
+                <div class="unit-progress">
+
+                    <div
+                        class="unit-progress-fill"
+                        id="progress-unit-2"
+                    ></div>
+
+                </div>
+
+                <div class="unit-footer">
+
+                    <span
+                        class="unit-percent"
+                        id="percent-unit-2"
+                    >
+                        0%
+                    </span>
+
+                    <a
+                        class="open-unit"
+                        href="subjects/Introduction%20to%20Technology%20BBA%20Sem%204/unit-2.html"
+                    >
+                        Open →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- UNIT 3 -->
+
+            <div class="unit-card">
+
+                <div class="unit-number">
+                    UNIT 3
+                </div>
+
+                <div class="unit-title">
+                    Competitive Advantage
+                </div>
+
+                <div class="unit-progress">
+
+                    <div
+                        class="unit-progress-fill"
+                        id="progress-unit-3"
+                    ></div>
+
+                </div>
+
+                <div class="unit-footer">
+
+                    <span
+                        class="unit-percent"
+                        id="percent-unit-3"
+                    >
+                        0%
+                    </span>
+
+                    <a
+                        class="open-unit"
+                        href="subjects/Introduction%20to%20Technology%20BBA%20Sem%204/unit-3.html"
+                    >
+                        Open →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- UNIT 4 -->
+
+            <div class="unit-card">
+
+                <div class="unit-number">
+                    UNIT 4
+                </div>
+
+                <div class="unit-title">
+                    Technological Forecasting
+                </div>
+
+                <div class="unit-progress">
+
+                    <div
+                        class="unit-progress-fill"
+                        id="progress-unit-4"
+                    ></div>
+
+                </div>
+
+                <div class="unit-footer">
+
+                    <span
+                        class="unit-percent"
+                        id="percent-unit-4"
+                    >
+                        0%
+                    </span>
+
+                    <a
+                        class="open-unit"
+                        href="subjects/Introduction%20to%20Technology%20BBA%20Sem%204/unit-4.html"
+                    >
+                        Open →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- UNIT 5 -->
+
+            <div class="unit-card">
+
+                <div class="unit-number">
+                    UNIT 5
+                </div>
+
+                <div class="unit-title">
+                    Technology Strategy
+                </div>
+
+                <div class="unit-progress">
+
+                    <div
+                        class="unit-progress-fill"
+                        id="progress-unit-5"
+                    ></div>
+
+                </div>
+
+                <div class="unit-footer">
+
+                    <span
+                        class="unit-percent"
+                        id="percent-unit-5"
+                    >
+                        0%
+                    </span>
+
+                    <a
+                        class="open-unit"
+                        href="subjects/Introduction%20to%20Technology%20BBA%20Sem%204/unit-5.html"
+                    >
+                        Open →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- UNIT 6 -->
+
+            <div class="unit-card">
+
+                <div class="unit-number">
+                    UNIT 6
+                </div>
+
+                <div class="unit-title">
+                    Technology Diffusion & Absorption
+                </div>
+
+                <div class="unit-progress">
+
+                    <div
+                        class="unit-progress-fill"
+                        id="progress-unit-6"
+                    ></div>
+
+                </div>
+
+                <div class="unit-footer">
+
+                    <span
+                        class="unit-percent"
+                        id="percent-unit-6"
+                    >
+                        0%
+                    </span>
+
+                    <a
+                        class="open-unit"
+                        href="subjects/Introduction%20to%20Technology%20BBA%20Sem%204/unit-6.html"
+                    >
+                        Open →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- UNIT 7 -->
+
+            <div class="unit-card">
+
+                <div class="unit-number">
+                    UNIT 7
+                </div>
+
+                <div class="unit-title">
+                    Technology Transfer
+                </div>
+
+                <div class="unit-progress">
+
+                    <div
+                        class="unit-progress-fill"
+                        id="progress-unit-7"
+                    ></div>
+
+                </div>
+
+                <div class="unit-footer">
+
+                    <span
+                        class="unit-percent"
+                        id="percent-unit-7"
+                    >
+                        0%
+                    </span>
+
+                    <a
+                        class="open-unit"
+                        href="subjects/Introduction%20to%20Technology%20BBA%20Sem%204/unit-7.html"
+                    >
+                        Open →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        BBA Semester 4 Personal Study System
+
+        <br>
+
+        Built for personal learning
+
+    </footer>
 
 </div>
+
+
+<script>
+
+    /*
+     * ============================================
+     * BASIC PROGRESS SYSTEM
+     * ============================================
+     *
+     * For now this uses browser localStorage.
+     *
+     * Later we will replace/extend this with:
+     *
+     * - Topic tracking
+     * - Quiz scores
+     * - Revision scheduling
+     * - Study time
+     * - Cloud synchronization
+     */
+
+
+    const TOTAL_UNITS = 7;
+
+
+    /*
+     * Get saved progress
+     */
+
+    function getProgress(unit) {
+
+        const value =
+            localStorage.getItem(
+                "bba_unit_" + unit
+            );
+
+        return value
+            ? parseInt(value)
+            : 0;
+    }
+
+
+    /*
+     * Save progress
+     */
+
+    function setProgress(unit, value) {
+
+        value = Math.max(
+            0,
+            Math.min(100, value)
+        );
+
+        localStorage.setItem(
+            "bba_unit_" + unit,
+            value
+        );
+
+        updateDashboard();
+    }
+
+
+    /*
+     * Update unit progress
+     */
+
+    function updateUnit(unit) {
+
+        const progress =
+            getProgress(unit);
+
+
+        const bar =
+            document.getElementById(
+                "progress-unit-" + unit
+            );
+
+
+        const percentage =
+            document.getElementById(
+                "percent-unit-" + unit
+            );
+
+
+        if (bar) {
+
+            bar.style.width =
+                progress + "%";
+
+        }
+
+
+        if (percentage) {
+
+            percentage.textContent =
+                progress + "%";
+
+        }
+
+    }
+
+
+    /*
+     * Calculate overall progress
+     */
+
+    function calculateOverallProgress() {
+
+        let total = 0;
+
+        for (
+            let unit = 1;
+            unit <= TOTAL_UNITS;
+            unit++
+        ) {
+
+            total +=
+                getProgress(unit);
+
+        }
+
+
+        return Math.round(
+            total / TOTAL_UNITS
+        );
+
+    }
+
+
+    /*
+     * Update dashboard
+     */
+
+    function updateDashboard() {
+
+        let completed = 0;
+
+
+        for (
+            let unit = 1;
+            unit <= TOTAL_UNITS;
+            unit++
+        ) {
+
+            updateUnit(unit);
+
+
+            if (
+                getProgress(unit) >= 100
+            ) {
+
+                completed++;
+
+            }
+
+        }
+
+
+        const overall =
+            calculateOverallProgress();
+
+
+        document.getElementById(
+            "overallPercent"
+        ).textContent =
+            overall + "%";
+
+
+        document.getElementById(
+            "overallProgress"
+        ).style.width =
+            overall + "%";
+
+
+        document.getElementById(
+            "completedUnits"
+        ).textContent =
+            completed;
+
+
+        updateContinueLearning();
+
+    }
+
+
+    /*
+     * Continue Learning
+     */
+
+    function updateContinueLearning() {
+
+        const lastUnit =
+            localStorage.getItem(
+                "bba_last_unit"
+            );
+
+
+        const info =
+            document.getElementById(
+                "continueInfo"
+            );
+
+
+        const button =
+            document.getElementById(
+                "continueButton"
+            );
+
+
+        if (!lastUnit) {
+
+            info.textContent =
+                "You haven't started studying yet.";
+
+
+            button.textContent =
+                "Start Unit 1";
+
+
+            button.href =
+                "subjects/Introduction%20to%20Technology%20BBA%20Sem%204/unit-1.html";
+
+
+            return;
+
+        }
+
+
+        info.textContent =
+            "You were last studying Unit "
+            + lastUnit
+            + ".";
+
+
+        button.textContent =
+            "Continue Unit "
+            + lastUnit;
+
+
+        button.href =
+            "subjects/Introduction%20to%20Technology%20BBA%20Sem%204/unit-"
+            + lastUnit
+            + ".html";
+
+    }
+
+
+    /*
+     * Remember which unit was opened
+     */
+
+    document
+        .querySelectorAll(".open-unit")
+        .forEach(function(link) {
+
+            link.addEventListener(
+                "click",
+                function() {
+
+                    const href =
+                        link.getAttribute(
+                            "href"
+                        );
+
+
+                    const match =
+                        href.match(
+                            /unit-(\d+)\.html/
+                        );
+
+
+                    if (match) {
+
+                        localStorage.setItem(
+                            "bba_last_unit",
+                            match[1]
+                        );
+
+                    }
+
+                }
+            );
+
+        });
+
+
+    /*
+     * Start dashboard
+     */
+
+    updateDashboard();
+
+</script>
 
 </body>
 </html>
